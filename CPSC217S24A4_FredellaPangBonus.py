@@ -27,7 +27,8 @@ def main():
     Main, gets filename from command line argument (or prompts if not included), reads file into dictionary, then executes contact list categorization
     :return: None
     """
-    filename = "DataSet2.txt"
+    
+    filename = "DataSet2.txt"   # assign dataset here
 
     
     # Check args, if there is an argument from the command line, get filename or exit
