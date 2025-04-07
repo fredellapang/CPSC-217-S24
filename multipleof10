@@ -6,7 +6,6 @@ def all_multiple(list):
     return boola
 
 def none_multiple(list):
-   
     lenlist = len(list)
     for i in range(lenlist):
         if (list[i]%10 == 0):
@@ -30,7 +29,6 @@ list4 = []
 numval = int(input())
 for i in range(numval):
     num = int(input())
-    # print(list4)
     list4.append(num)
 
 find_out(list4)
