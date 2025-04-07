@@ -28,6 +28,8 @@ def main():
     :return: None
     """
     filename = "DataSet2.txt"
+
+    
     # Check args, if there is an argument from the command line, get filename or exit
     """if len(sys.argv) > FIRSTARGV:
         # Get filename
