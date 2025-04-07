@@ -14,6 +14,7 @@ It will also name stars and constellations as well as draw boxes around constell
 """
 
 from SimpleGraphics import *
+import sys
 
 # STYLE CONSTANTS
 BORDER = 25
@@ -36,6 +37,15 @@ YAXISPOS = 0.1
 YAXISNEG = -0.1
 YAXIS_STEP = 0.1
 OFFSET = 15 
+
+
+filename = ""
+
+if filename != "":
+    try:
+        sys.stdin = open(filename "r")
+    except:
+        print("filename", filename, " not found. Resuming with no pre-inputted data") 
 
 # WINDOW
 size = 0  # Assume invalid size
