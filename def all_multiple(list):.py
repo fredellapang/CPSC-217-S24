@@ -1,0 +1,37 @@
+def all_multiple(list):
+    boola = True
+    for i in list:
+        if (i%10 != 0):
+            boola = False
+    return boola
+
+def none_multiple(list):
+   
+    lenlist = len(list)
+    for i in range(lenlist):
+        if (list[i]%10 == 0):
+            return False
+        else:
+            return True
+
+list1= [10,20, 33, 40]
+list2= [10,20, 30, 40]
+list3= [11,22, 33, 44]
+
+def find_out(list):
+    if all_multiple(list):
+        print("List contains only multiples of 10.")
+    elif none_multiple(list):
+        print("List contains no multiples")
+    else:
+        print("List both mixed values")
+
+list4 = []
+numval = int(input())
+for i in range(numval):
+    num = int(input())
+    # print(list4)
+    list4.append(num)
+
+find_out(list4)
+find_out(list1)
