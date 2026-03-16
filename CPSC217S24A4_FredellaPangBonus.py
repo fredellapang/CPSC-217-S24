@@ -73,6 +73,7 @@ def main():
     for contact in data: # for each contact list
         key = contact[0]  # key is first name of contact list
         contact.pop(0)  # remove key from contact list
+        print("hello")
         names_dict[key] = contact  # add contact list to the person/key
     # Part 1
     # Print data from dict
